@@ -1,0 +1,27 @@
+{
+    "name": "vscode-ispc-syntax",
+    "displayName": "ISPC language syntax",
+    "description": "ISPC language syntax",
+    "version": "0.0.0",
+    "publisher": "chloekek",
+    "engines": {
+        "vscode": "^1.8.0"
+    },
+    "contributes": {
+        "grammars": [
+            {
+                "language": "ispc",
+                "scopeName": "source.ispc",
+                "path": "./syntaxes/ispc.tmLanguage"
+            }
+        ],
+        "languages": [
+            {
+                "id": "ispc",
+                "extensions": [ ".ispc", ".isph" ],
+                "aliases": [ "Intel® Implicit SPMD Program Compiler", "ISPC" ],
+                "configuration": "./lang-configs/ispc.json"
+            }
+        ]
+    }
+}
